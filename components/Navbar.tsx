@@ -5,9 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Brain, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import useUserProfile from "@/hooks/useUserProfile";
+import { useRouter } from "next/navigation";
 
 export default function Navigation() {
   const { userProfile, loading } = useUserProfile();
+  const router = useRouter();
+  const handleLogout = () => {
+    localStorage.removeItem("userData");
+    localStorage.removeItem("quizProgress");
+    router.push("/");
+  };
   return (
     <header className="sticky top-0  z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container ml-0 md:ml-3 flex h-14 items-center">
@@ -33,14 +40,23 @@ export default function Navigation() {
           {!loading && (
             <>
               {!userProfile && (
-                <Button variant="ghost" className="justify-start" asChild>
+                <Button variant="outline" className="justify-start" asChild>
                   <Link href={"/login"}>Login</Link>
                 </Button>
               )}
               {userProfile && (
-                <Button className="justify-start" asChild>
-                  <Link href={"/start-quiz"}>Start Quiz</Link>
-                </Button>
+                <>
+                  <Button className="justify-start" asChild>
+                    <Link href={"/start-quiz"}>Start Quiz</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="justify-start"
+                    onClick={handleLogout}
+                  >
+                    Logout
+                  </Button>
+                </>
               )}
             </>
           )}
@@ -66,7 +82,7 @@ export default function Navigation() {
                     href="#"
                     className="text-lg font-medium transition-colors hover:text-primary"
                   >
-                  Home
+                    Home
                   </Link>
 
                   <Link
@@ -82,7 +98,7 @@ export default function Navigation() {
                     <>
                       {!userProfile && (
                         <Button
-                          variant="ghost"
+                          variant="outline"
                           className="justify-start"
                           asChild
                         >
@@ -90,9 +106,18 @@ export default function Navigation() {
                         </Button>
                       )}
                       {userProfile && (
-                        <Button className="justify-start" asChild>
-                          <Link href={"/start-quiz"}>Get Started</Link>
-                        </Button>
+                        <>
+                          <Button className="justify-start" asChild>
+                            <Link href={"/start-quiz"}>Get Started</Link>
+                          </Button>
+                          <Button
+                            variant="outline"
+                            className="justify-start"
+                            onClick={handleLogout}
+                          >
+                            Logout
+                          </Button>
+                        </>
                       )}
                     </>
                   )}
