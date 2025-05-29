@@ -13,9 +13,9 @@ export default function GetStarted() {
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               QuizMaster is the ultimate platform for interactive learning
-              through quizzes. Whether you're a student preparing for exams, a
+              through quizzes. Whether you&#39;re a student preparing for exams, a
               teacher creating assessments, or someone who loves to learn new
-              things, we've got you covered.
+              things, we&#39;ve got you covered.
             </p>
           </div>
         </div>

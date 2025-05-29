@@ -1,7 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { QuizAPIResponse, QuizProgressProps } from "../_types/quizTypes";
+import React from "react";
 import Result from "./Result";
 import Question from "./Question";
 import AnswerOptions from "./AnswerOptions";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription} from "@/components/ui/card"
 import { Brain, Clock, Users } from "lucide-react";
 export default function Features() {
   return (

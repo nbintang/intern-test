@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import axios from "axios";
 import { QuizAPIResponse, QuizProgressProps } from "../_types/quizTypes";
 
@@ -80,8 +80,6 @@ const useQuiz = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, [quizProgress.isQuizDone, quizProgress.questions.length]);
-
-  const currentQuestion = quizProgress.questions[quizProgress.currentIndex];
 
   const handleAnswer = (answer: string) => {
     if (quizProgress.isQuizDone) return;

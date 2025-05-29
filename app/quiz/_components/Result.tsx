@@ -12,7 +12,7 @@ const Result = ({
   quizProgress: QuizProgressProps;
   handleRetakeQuiz: () => Promise<void>;
 }) => {
-  const { width, height } = useWindowSize();
+  const {  height } = useWindowSize();
   const correctCount = quizProgress.selectedAnswers.filter(
     (ans, idx) => ans === quizProgress.questions[idx]?.correct_answer
   ).length;

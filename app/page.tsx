@@ -1,18 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import { Badge } from "@/components/ui/badge";
 
 import Link from "next/link";
 import Navigation from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Brain, Clock, Users } from "lucide-react";
+
 import Features from "@/components/Features";
 import GetStarted from "@/components/GetStarted";
 
