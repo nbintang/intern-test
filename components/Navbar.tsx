@@ -70,7 +70,7 @@ export default function Navigation() {
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="right" className="w-[300px] px-3 sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-4">
                 <Link href="/" className="flex items-center space-x-2 mb-6">
                   <Brain className="h-6 w-6 text-primary" />

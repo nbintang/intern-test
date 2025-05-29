@@ -21,8 +21,8 @@ export default function Quiz() {
     return (
       <div className="flex justify-center items-center h-64">
         <div className="flex gap-x-2 items-center">
-          <p className="text-2xl">Loading...</p>
-          <LoaderCircleIcon className="animate-spin h-10 w-10" />
+          <p className="text-lg md:text-xl">Loading...</p>
+          <LoaderCircleIcon className="animate-spin h-5 w-5 md:w-8 md:h-8" />
         </div>
       </div>
     );
@@ -38,7 +38,7 @@ export default function Quiz() {
     <>
       {!quizProgress.isQuizDone && (
         <>
-          <Card className="w-full md:max-w-96 mx-3 md:mx-0">
+          <Card className="w-full max-w-80 md:max-w-96 mx-3 md:mx-0">
             <CardHeader>
               <Question
                 currentQuestion={currentQuestion}
