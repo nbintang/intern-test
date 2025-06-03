@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 QuizMaster
 
-## Getting Started
+**QuizMaster** is an interactive web-based quiz application designed to provide a fun and structured learning experience. It allows users to participate in quiz sessions with advanced features such as user authentication, quiz timer, progress tracking, and detailed quiz result display.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **User Authentication**: Users can log in to their accounts and access personalized quiz sessions.
+- **Quiz Timer**: Each quiz session includes a timer to ensure timely completion.
+- **Progress Tracking**: Users can track their progress and resume quizzes from where they left off.
+- **Quiz Results**: Users can view their quiz results, including correct and incorrect answers.
+- **Responsive Design**: The application is fully responsive and works seamlessly across various devices.
+
+## 🛠️ Tech Stack
+
+- **Next.js 14 (App Router)** – React-based framework for fast and scalable web applications.
+- **React** – JavaScript library for building user interfaces.
+- **TypeScript** – Strongly typed language built on JavaScript.
+- **Tailwind CSS** – Utility-first CSS framework for rapid styling.
+- **shadcn/ui** – Reusable and customizable UI components.
+- **Zod** – Type-safe schema validation.
+- **React Hook Form** – Flexible form management and validation.
+- **NextAuth.js** – Authentication solution for Next.js applications.
+- **pnpm** – Fast and efficient package manager.
+- **Vercel** – Deployment platform optimized for Next.js with built-in CI/CD support.
+
+## 📁 Directory Structure
+
+```
+quizmaster/
+├── app/             # Main directory for pages and routing (App Router)
+├── components/      # Reusable UI components
+├── hooks/           # Custom React hooks
+├── lib/             # Utility functions and helpers
+├── public/          # Static assets
+├── styles/          # Global styling files
+├── .vscode/         # Editor config (optional)
+├── .gitignore       # Git ignored files
+├── README.md        # Project documentation
+├── next.config.ts   # Next.js configuration
+├── package.json     # Project metadata and dependencies
+├── pnpm-lock.yaml   # Lock file for pnpm
+├── tsconfig.json    # TypeScript configuration
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/nbintang/intern-test.git
+   cd intern-test
+   ```
 
-## Learn More
+2. **Install dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+   Make sure you have `pnpm` installed. If not, install it first.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   pnpm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server:**
 
-## Deploy on Vercel
+   ```bash
+   pnpm dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Access the app:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🌐 Live Demo
+
+Check out the live version at: [https://intern-test-steel.vercel.app/](https://intern-test-steel.vercel.app/)
