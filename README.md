@@ -12,7 +12,7 @@
 
 ## 🛠️ Tech Stack
 
-- **Next.js 14 (App Router)** – React-based framework for fast and scalable web applications.
+- **Next.js 15 (App Router)** – React-based framework for fast and scalable web applications.
 - **React** – JavaScript library for building user interfaces.
 - **TypeScript** – Strongly typed language built on JavaScript.
 - **Tailwind CSS** – Utility-first CSS framework for rapid styling.
