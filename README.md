@@ -18,7 +18,6 @@
 - **Tailwind CSS** – Utility-first CSS framework for rapid styling.
 - **shadcn/ui** – Reusable and customizable UI components.
 - **Zod** – Type-safe schema validation.
-- **React Hook Form** – Flexible form management and validation.
 - **pnpm** – Fast and efficient package manager.
 - **Vercel** – Deployment platform optimized for Next.js with built-in CI/CD support.
 
