@@ -19,7 +19,6 @@
 - **shadcn/ui** – Reusable and customizable UI components.
 - **Zod** – Type-safe schema validation.
 - **React Hook Form** – Flexible form management and validation.
-- **NextAuth.js** – Authentication solution for Next.js applications.
 - **pnpm** – Fast and efficient package manager.
 - **Vercel** – Deployment platform optimized for Next.js with built-in CI/CD support.
 
